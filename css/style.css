@@ -30,12 +30,16 @@ nav{
   justify-content: flex-start;
 }
 
-.logo-container figure{
+/* .logo-container figure{
   width: 170px;
 }
 
 .logo-container figure img{
   width: 100%;
+} */
+
+.logo-container img{
+  width: 170px;
 }
 
 .search-container{
@@ -447,5 +451,19 @@ section.text-section{
 
   .post-list{
     gap: 3px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  /* .header-wrapper{
+    padding: 0;
+  } */
+
+  .logo-container img{
+    width: 140px;
+  }
+
+  .signin-container img{
+    width: 120px;
   }
 }
