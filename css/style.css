@@ -408,7 +408,7 @@ section.text-section{
 
   .profile{
     display: grid;
-    max-width: 100%;
+    max-width: 345px;
     /* grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
     grid-template-areas: "profile-img name verified more-section"; */
 
@@ -482,6 +482,25 @@ section.text-section{
     width: 100px;
   }
 
+  ul.stories-list{
+    padding-inline-start: 0 !important;
+  }
+
+  li.story{
+    list-style: none;
+    display: inline-grid;
+    margin: 0 auto;
+    /* text-align: center; */
+    width: 85px;
+    height: 85px;
+  }
+  
+  figure.story-image img{
+    margin-top: 22px;
+    border-radius: 50%;
+    width: 60px;
+  }
+
   /* section.title-bar{
     max-width: 100%;;
   } */
@@ -510,7 +529,7 @@ section.text-section{
   }
 
   .profile{
-    margin-left: 38px;
+    margin-left: 10px;
   }
 
   .friends-following{
@@ -538,4 +557,16 @@ section.text-section{
     width: 345px !important;
     padding: 0 !important;
   }
+
+  ul.engagement-section{
+    max-width: 345px;
+  }
+
+  .text-section{
+    max-width: 345px;
+  }
+
+  /* html{
+    max-width: 345px;
+  } */
 }
