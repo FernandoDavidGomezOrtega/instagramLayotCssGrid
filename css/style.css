@@ -292,10 +292,10 @@ section.stories-section{
 }
 
 ul.stories-list{
-  width: fit-content;
+  /* width: fit-content; */
   margin: auto;
   /* min-width: 1024px; */
-  text-align: center;
+  /* text-align: center; */
 }
 
 li.story{
@@ -373,9 +373,22 @@ section.text-section{
   float: left;
 }
 
+@media screen and (min-width: 426px){
+  .d-block{
+    display: none !important;
+  }
+
+  .d-none{
+    display: block !important;
+  }
+}
+
+
 @media screen and (max-width: 425px){
+
+
   .header-wrapper{
-    max-width: 100%;
+    max-width: 100% !important;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "logo-container signin-container";
@@ -396,8 +409,11 @@ section.text-section{
   .profile{
     display: grid;
     max-width: 100%;
-    grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
-    grid-template-areas: "profile-img name verified more-section";
+    /* grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
+    grid-template-areas: "profile-img name verified more-section"; */
+
+    grid-template-columns: 0.5fr 1fr 0.5fr ;
+    grid-template-areas: "profile-img name verified";
 
 
     margin-left: 7px;
@@ -411,6 +427,27 @@ section.text-section{
   .title-bar{
     display: block;
   }
+
+  /* ////////////////////////////////////////////// */
+  /* .engagement-section, 
+  .text-section h2,
+  .profile-description,
+  .friends-following{
+    display: none !important;
+  } */
+
+  .d-none{
+    display: none !important;
+  }
+
+  .d-block{
+    display: block !important;
+    width: 370px !important;
+    padding: 0 20px 0 20px;
+  }
+
+  
+  /* ///////////////////////////////////////////////////////// */
 
   .vis-425-down{
     display: inline;
@@ -459,11 +496,46 @@ section.text-section{
     padding: 0;
   } */
 
+  .header{
+    /* max-width: 100% !important; */
+    width: 415px;
+  }
+
   .logo-container img{
     width: 140px;
   }
 
   .signin-container img{
     width: 120px;
+  }
+
+  .profile{
+    margin-left: 47px;
+  }
+
+  .friends-following{
+    width: 322px;
+    margin-bottom: 0px;
+  }
+
+  li.story{
+    list-style: none;
+    display: inline-grid;
+    margin: 0 auto;
+    text-align: center;
+    width: 85px;
+    height: 85px;
+  }
+  
+  figure.story-image img{
+    margin-top: 22px;
+    border-radius: 50%;
+    width: 60px;
+  }
+
+  ul.stories-list{
+    /* padding: 0 55px 0 0px !important; */
+    width: 345px !important;
+    padding: 0 !important;
   }
 }
