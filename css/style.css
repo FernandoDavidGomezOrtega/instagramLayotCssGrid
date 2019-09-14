@@ -293,7 +293,7 @@ section.stories-section{
 
 ul.stories-list{
   /* width: fit-content; */
-  margin: auto;
+  margin-left: 126px !important;
   /* min-width: 1024px; */
   /* text-align: center; */
 }
@@ -371,6 +371,15 @@ figure.story-image img{
 
 section.text-section{
   float: left;
+}
+
+@media screen and (max-width: 768px){
+  ul.stories-list{
+    /* width: fit-content; */
+    margin: 0 auto !important;
+    /* min-width: 1024px; */
+    /* text-align: center; */
+  }
 }
 
 @media screen and (min-width: 426px){
